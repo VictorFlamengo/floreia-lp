@@ -1,4 +1,7 @@
 import { Heart, Leaf, Sparkles } from "lucide-react";
+import CountUp from './animations/countUpNumber'
+import TextType from "./animations/textType";
+
 
 const AboutSection = () => {
   const features = [
@@ -25,7 +28,14 @@ const AboutSection = () => {
         <div className="text-center mb-16">
           <span className="text-coral font-medium text-sm uppercase tracking-wider">Sobre Nós</span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mt-2 mb-4">
-            Verde que transforma
+            <span>Verde que </span>
+            <TextType text={["transforma", "inspira", "conecta"]} 
+            pauseDuration={5000}
+            showCursor={true}
+            typingSpeed={100}
+            cursorCharacter="|"
+            deletingSpeed={100}
+            />
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
             A Floreiamô nasceu do amor pelas plantas e pela arte manual. Combinamos 
@@ -56,14 +66,19 @@ const AboutSection = () => {
         {/* Stats */}
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { value: "35.9k", label: "Seguidores" },
-            { value: "276+", label: "Publicações" },
-            { value: "100%", label: "Artesanal" },
+            { value: 35.9, suffix: "k", label: "Seguidores" }, // Changed to number for CountUp
+            { value: 276, suffix: "+", label: "Publicações" }, // Changed to number for CountUp
+            { value: 100, suffix: "%", label: "Artesanal" }, // Changed to number for CountUp
             { value: "2x", label: "Entregas/Semana" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="font-display text-3xl md:text-4xl font-bold text-primary mb-1">
-                {stat.value}
+                {typeof stat.value === 'number' ? (
+                  <CountUp to={stat.value} duration={1} separator="." />
+                ) : (
+                      stat.value
+                )}
+                {stat.suffix && <span className="ml-1">{stat.suffix}</span>}
               </div>
               <div className="text-muted-foreground text-sm">{stat.label}</div>
             </div>

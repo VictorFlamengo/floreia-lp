@@ -26,8 +26,8 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Localização</h3>
-                  <p className="text-muted-foreground">Fortaleza - CE</p>
-                  <p className="text-sm text-muted-foreground mt-1">Loja Virtual</p>
+                  <p className="text-muted-foreground">Rua 214, 164 - Conj. São Cristóvão</p>
+                  <p className="text-sm text-muted-foreground mt-1">Fortaleza - CE</p>
                 </div>
               </div>
 

@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-full bg-golden flex items-center justify-center">
+            <div className="w-10 h-10 rounded-full bg-[#b2c79c] flex items-center justify-center">
               <Leaf className="w-5 h-5 text-foreground" />
             </div>
             <span className="font-display text-xl font-semibold text-primary-foreground">Floreiamô</span>

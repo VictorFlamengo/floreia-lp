@@ -10,7 +10,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 glass-card border-b border-border/30">
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         <a href="/" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 rounded-full bg-golden flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+          <div className="w-10 h-10 rounded-full bg-[#b2c79c] flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
             <Leaf className="w-5 h-5 text-primary" />
           </div>
           <span className="font-display text-xl font-semibold text-primary">Floreiamô</span>
