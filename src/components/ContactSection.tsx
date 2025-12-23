@@ -68,7 +68,7 @@ const ContactSection = () => {
                 Clique no botão abaixo e converse diretamente conosco pelo WhatsApp!
               </p>
               <Button variant="whatsapp" size="lg" asChild>
-                <a href="https://wa.me/5585999999999" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/558596001460?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20as%20plantas!" target="_blank" rel="noopener noreferrer">
                   Chamar no WhatsApp
                 </a>
               </Button>

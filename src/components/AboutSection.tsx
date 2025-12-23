@@ -66,7 +66,7 @@ const AboutSection = () => {
         {/* Stats */}
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { value: 35.9, suffix: "k", label: "Seguidores" }, // Changed to number for CountUp
+            { value: 36.0, suffix: "k", label: "Seguidores" }, // Changed to number for CountUp
             { value: 276, suffix: "+", label: "Publicações" }, // Changed to number for CountUp
             { value: 100, suffix: "%", label: "Artesanal" }, // Changed to number for CountUp
             { value: "2x", label: "Entregas/Semana" },

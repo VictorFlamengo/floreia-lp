@@ -1,26 +1,26 @@
 import { Button } from "@/components/ui/button";
 import productMacrame from "@/assets/product-macrame.jpg";
 import productJiboia from "@/assets/product-jiboia.jpg";
-import productZamioculca from "@/assets/product-zamioculca.jpg";
+import productMacrame2 from "@/assets/product-macrame2.jpg";
 import productPrateleira from "@/assets/product-prateleira.jpg";
 
 const ProductsSection = () => {
   const products = [
     {
-      image: productMacrame,
+      image: productMacrame2,
       title: "Suporte Macramê",
       category: "Artesanato",
       price: "A partir de R$ 45",
     },
     {
       image: productJiboia,
-      title: "Jiboia Manjula",
-      category: "Plantas",
+      title: "Suportes",
+      category: "Artesanato",
       price: "A partir de R$ 25",
     },
     {
-      image: productZamioculca,
-      title: "Zamioculca",
+      image: productMacrame,
+      title: "Vasos com Plantas",
       category: "Plantas",
       price: "A partir de R$ 35",
     },
