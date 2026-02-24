@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
 import NotFound from "./pages/NotFound";
 import { Analytics } from '@vercel/analytics/react';
+import { AnalyticsTracker } from "./AnalyticsTracker";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +17,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <AnalyticsTracker />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route
