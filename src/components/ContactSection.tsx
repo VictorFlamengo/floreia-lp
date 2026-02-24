@@ -1,7 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Clock, MessageCircle } from "lucide-react";
+import ReactGA from "react-ga4";
 
 const ContactSection = () => {
+
+  const handleWhatsappClick = () => {
+    ReactGA.event({
+      category: "CTA",
+      action: "Clique no WhatsApp",
+      label: "Botão Fazer Pedido"
+    });
+  };
+
+
   return (
     <section id="contato" className="py-24 bg-card">
       <div className="container mx-auto px-4">
@@ -68,7 +79,7 @@ const ContactSection = () => {
                 Clique no botão abaixo e converse diretamente conosco pelo WhatsApp!
               </p>
               <Button variant="whatsapp" size="lg" asChild>
-                <a href="https://wa.me/558596001460?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20as%20plantas!" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/558596001460?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20as%20plantas!" target="_blank" rel="noopener noreferrer" onClick={handleWhatsappClick}>
                   Chamar no WhatsApp
                 </a>
               </Button>

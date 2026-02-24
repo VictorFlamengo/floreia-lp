@@ -3,8 +3,17 @@ import productMacrame from "@/assets/product-macrame.jpg";
 import productJiboia from "@/assets/product-jiboia.jpg";
 import productMacrame2 from "@/assets/product-macrame2.jpg";
 import productPrateleira from "@/assets/product-prateleira.jpg";
+import ReactGA from "react-ga4";
 
 const ProductsSection = () => {
+  const handleInstagramClick = () => {
+    ReactGA.event({
+      category: "CTA",
+      action: "Clique no Instagram",
+      label: "Botão Ver no Instagram"
+    });
+  };
+
   const products = [
     {
       image: productMacrame2,
@@ -88,7 +97,7 @@ const ProductsSection = () => {
 
         <div className="text-center mt-12">
           <Button variant="golden" size="lg" asChild>
-            <a href="https://instagram.com/floreiamo_" target="_blank" rel="noopener noreferrer">
+            <a href="https://instagram.com/floreiamo_" target="_blank" rel="noopener noreferrer" onClick={handleInstagramClick}>
               Ver mais no Instagram
             </a>
           </Button>
